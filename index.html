@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logarithms - AI Differentiator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Math Differentiator</h1>
+            <p>Topic: Logarithms & Their Properties</p>
+        </header>
+
+        <div class="level-selector">
+            <button class="level-btn active" onclick="setLevel(1)">Level 1: Foundation</button>
+            <button class="level-btn" onclick="setLevel(2)">Level 2: Standard</button>
+            <button class="level-btn" onclick="setLevel(3)">Level 3: Advanced</button>
+        </div>
+
+        <div class="task-card">
+            <h2 id="task-title">Level 1: Foundation (Simplified)</h2>
+            <p id="task-description">A basic introduction to logarithmic form. Reminder: log_a(b) = c means a^c = b.</p>
+            <div class="math-box" id="task-math">Problem: Evaluate log_2(8).</div>
+            
+            <div class="input-section">
+                <input type="text" id="user-answer" placeholder="Enter your answer (e.g., 3)">
+                <button onclick="checkAnswer()">Check</button>
+                <button class="ai-btn" onclick="getAIHint()">🤖 AI Hint</button>
+            </div>
+
+            <div id="feedback" class="feedback-box"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
